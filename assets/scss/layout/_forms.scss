@@ -1,0 +1,139 @@
+.ingredient_wrapper{
+    width: 100%;
+    max-width: 1080px;
+    margin: 30px auto;
+    padding: 20px;
+    border-top: 2px solid $black;
+    border-bottom: 1px solid $black;
+    background-color: white;
+
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ingredient_wrap{
+    @include flex_start;
+
+    .middle_theme{
+        width: 100px;
+        @include regCaption;
+        color: $darkGray;
+    }
+
+    >ul{
+        @include flex_start;
+        align-items: center;
+        margin-bottom: 10px;
+
+        li{
+            margin-right: 20px;
+
+            @include flex_start;
+            align-items: center;
+
+            >p{
+                margin-right: 10px;
+                font-size: 14px;
+                .value{
+                    font-weight: 500;
+                }
+            }
+
+            .right_arrow{
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.object_wrapper{
+    max-width: 1080px;
+    margin: 30px auto;
+    border-top: 2px solid $black;
+
+    >ul{
+        overflow: hidden;
+        @include flex_start;
+        @include transition04;
+
+        >li{
+            margin-right: 25px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+
+        &.hide{
+            height: 0;
+        }
+    }
+}
+
+.object_theme{
+    border-bottom: 1px solid $black;
+    padding: 20px;
+    @include flex_between_center;
+
+    .bottom_arrow{
+        @include transition04;
+        transform: rotate(180deg);
+
+        &.on{
+            transform: rotate(360deg);
+        }
+    }
+}
+
+.object{
+    width: calc((100% - 80px) / 4);
+    @include flex_center;
+    flex-direction: column;
+
+    .thum{
+        width: 170px;
+        height: 170px;
+        @include bgCover;
+        margin-bottom: 20px;
+    }
+
+    .boldCaslon{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.object_option_wrap{
+    width: 100%;
+    border-top: 2px solid $black;
+
+    .dot{
+        width: 6px;
+        height: 6px;
+        border-radius: 100%;
+        margin: 10px;
+    }
+
+    li{
+        border-bottom: 1px solid $black;
+        @include flex_center;
+        padding: 10px;
+
+        >p{
+            margin-right: 20px;
+            width: 50px;
+        }
+    }
+}
+
+.num_input_wrap{
+    @include flex_start_center;
+
+    input[type='number'] {
+        text-align: center;
+        @include regP;
+        width: 50px;
+        border: none;
+    }
+}

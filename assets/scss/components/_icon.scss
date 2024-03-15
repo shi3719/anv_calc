@@ -1,0 +1,44 @@
+
+.right_arrow{
+    width: 12px;
+    height: 12px;
+    background-color: $darkGray;
+    content: '';
+    mask: url(/assets/images/right_arrow.svg) no-repeat center/contain;
+    -webkit-mask: url(/assets/images/right_arrow.svg) no-repeat center/contain;
+
+    cursor: pointer;
+}
+
+.left_arrow{
+    width: 12px;
+    height: 12px;
+    background-color: $darkGray;
+    content: '';
+    mask: url(/assets/images/left_arrow.svg) no-repeat center/contain;
+    -webkit-mask: url(/assets/images/left_arrow.svg) no-repeat center/contain;
+
+    cursor: pointer;
+}
+
+.bottom_arrow{
+    width: 16px;
+    height: 16px;
+    background-color: $darkGray;
+    content: '';
+    mask: url(/assets/images/bottom_arrow.svg) no-repeat center/contain;
+    -webkit-mask: url(/assets/images/bottom_arrow.svg) no-repeat center/contain;
+
+    cursor: pointer;
+}
+
+.up_arrow{
+    width: 16px;
+    height: 16px;
+    background-color: $darkGray;
+    content: '';
+    mask: url(/assets/images/up_arrow.svg) no-repeat center/contain;
+    -webkit-mask: url(/assets/images/up_arrow.svg) no-repeat center/contain;
+
+    cursor: pointer;
+}
