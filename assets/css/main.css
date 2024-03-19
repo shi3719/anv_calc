@@ -251,7 +251,7 @@ input[type=number] {
 
 .ingredient_wrapper {
   width: 100%;
-  max-width: 1080px;
+  max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 30px;
   padding: 50px 20px 20px 20px;
@@ -293,6 +293,7 @@ input[type=number] {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 }
 .ingredient_wrap > ul > li {
   margin-right: 20px;
@@ -316,7 +317,7 @@ input[type=number] {
 }
 
 .object_wrapper {
-  max-width: 1080px;
+  max-width: 1200px;
   margin: 30px auto;
   border-top: 2px solid #333333;
 }
@@ -404,4 +405,4 @@ input[type=number] {
   font-weight: 300;
   width: 50px;
   border: none;
-}
+}/*# sourceMappingURL=main.css.map */

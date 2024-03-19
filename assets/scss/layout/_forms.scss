@@ -1,6 +1,6 @@
 .ingredient_wrapper{
     width: 100%;
-    max-width: 1080px;
+    max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 30px;
     padding: 50px 20px 20px 20px;
@@ -43,6 +43,7 @@
     >ul{
         @include flex_start;
         align-items: center;
+        flex-wrap: wrap;
 
         >li{
             margin-right: 20px;
@@ -72,7 +73,7 @@
 }
 
 .object_wrapper{
-    max-width: 1080px;
+    max-width: 1200px;
     margin: 30px auto;
     border-top: 2px solid $black;
 
