@@ -294,6 +294,7 @@ input[type=number] {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+  width: calc(100% - 100px);
 }
 .ingredient_wrap > ul > li {
   margin-right: 20px;
@@ -315,6 +316,11 @@ input[type=number] {
 .ingredient_wrap > ul > li .right_arrow {
   cursor: pointer;
 }
+@media (max-width: 719px) {
+  .ingredient_wrap > ul > li {
+    margin-bottom: 4px;
+  }
+}
 
 .object_wrapper {
   max-width: 1200px;
@@ -335,6 +341,13 @@ input[type=number] {
 }
 .object_wrapper > ul.hide {
   height: 0;
+}
+@media (max-width: 719px) {
+  .object_wrapper > ul {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 10px;
+  }
 }
 
 .object_theme {
@@ -369,6 +382,12 @@ input[type=number] {
 .object .boldCaslon {
   text-align: center;
   margin-bottom: 20px;
+}
+@media (max-width: 719px) {
+  .object {
+    width: calc((100% - 10px) / 2);
+    margin-right: 0 !important;
+  }
 }
 
 .object_option_wrap {
